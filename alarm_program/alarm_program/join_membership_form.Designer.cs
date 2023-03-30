@@ -200,6 +200,7 @@
             // position
             // 
             this.position.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.position.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.position.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.position.FormattingEnabled = true;
             this.position.Items.AddRange(new object[] {
