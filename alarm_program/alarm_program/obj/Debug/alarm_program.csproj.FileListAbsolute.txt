@@ -11,7 +11,6 @@ C:\Users\swl\source\repos\alarm_program\alarm_program\obj\Debug\alarm_program.ex
 C:\Users\swl\source\repos\alarm_program\alarm_program\obj\Debug\alarm_program.pdb
 C:\Users\swl\source\repos\alarm_program\alarm_program\obj\Debug\alarm_program.add_alarm_form.resources
 C:\Users\swl\source\repos\alarm_program\alarm_program\obj\Debug\alarm_program.alarm_score_form.resources
-C:\Users\T-user\Desktop\code\software_teamproject\alarm_program\alarm_program\obj\Debug\alarm_program.csproj.AssemblyReference.cache
 C:\Users\T-user\Desktop\code\software_teamproject\alarm_program\alarm_program\obj\Debug\alarm_program.add_alarm_form.resources
 C:\Users\T-user\Desktop\code\software_teamproject\alarm_program\alarm_program\obj\Debug\alarm_program.login_form.resources
 C:\Users\T-user\Desktop\code\software_teamproject\alarm_program\alarm_program\obj\Debug\alarm_program.Properties.Resources.resources
@@ -47,3 +46,5 @@ C:\Users\T-user\Desktop\code\software_teamproject\alarm_program\alarm_program\ob
 C:\Users\T-user\Desktop\code\software_teamproject\alarm_program\alarm_program\bin\Debug\ConfigParser.dll
 C:\Users\T-user\Desktop\code\software_teamproject\alarm_program\alarm_program\bin\Debug\WakaTime.dll
 C:\Users\T-user\Desktop\code\software_teamproject\alarm_program\alarm_program\obj\Debug\alarm_program.join_membership_form.resources
+C:\Users\T-user\Desktop\code\software_teamproject\alarm_program\alarm_program\obj\Debug\alarm_program.csproj.AssemblyReference.cache
+C:\Users\T-user\Desktop\code\software_teamproject\alarm_program\alarm_program\obj\Debug\alarm_program.csproj.SuggestedBindingRedirects.cache

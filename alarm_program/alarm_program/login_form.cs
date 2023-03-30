@@ -64,20 +64,9 @@ namespace alarm_program
                     MySqlDataReader table = command.ExecuteReader();
                     while (table.Read())
                     {
-                        if (textBox1.Text == table["id"].ToString() && textBox2.Text == table["password"].ToString()) // 아이디 비밀번호 대조 
+                        if (textBox1.Text == table["id"].ToString() && textBox2.Text == table["password"].ToString()) // 아이디 비밀번호 대조  
                         {
                             MessageBox.Show("환영합니다.");
-                        }
-                        else
-                        {
-                            if(textBox1.Text != table["id"].ToString()) // 아이디가 틀렸을시 
-                            {
-                                MessageBox.Show("아이디가 틀렸습니다."); 
-                            }
-                            else if (textBox1.Text != table["password"].ToString()) // 비밀번호가 틀렸을시 
-                            {
-                                MessageBox.Show("비밀번호가 틀렸습니다.");
-                            }
                         }
                     }
                     table.Close();

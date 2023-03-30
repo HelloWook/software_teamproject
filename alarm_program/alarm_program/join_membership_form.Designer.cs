@@ -33,17 +33,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.password = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.id = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.name = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.position = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -96,14 +96,14 @@
             this.panel3.Size = new System.Drawing.Size(250, 1);
             this.panel3.TabIndex = 22;
             // 
-            // textBox2
+            // password
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.textBox2.Font = new System.Drawing.Font("함초롬바탕 확장B", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox2.Location = new System.Drawing.Point(29, 166);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(250, 32);
-            this.textBox2.TabIndex = 21;
+            this.password.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.password.Font = new System.Drawing.Font("함초롬바탕 확장B", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.password.Location = new System.Drawing.Point(29, 166);
+            this.password.Name = "password";
+            this.password.Size = new System.Drawing.Size(250, 32);
+            this.password.TabIndex = 21;
             // 
             // panel2
             // 
@@ -113,14 +113,14 @@
             this.panel2.Size = new System.Drawing.Size(250, 1);
             this.panel2.TabIndex = 20;
             // 
-            // textBox1
+            // id
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.textBox1.Font = new System.Drawing.Font("함초롬바탕 확장B", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox1.Location = new System.Drawing.Point(29, 94);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(250, 32);
-            this.textBox1.TabIndex = 19;
+            this.id.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.id.Font = new System.Drawing.Font("함초롬바탕 확장B", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.id.Location = new System.Drawing.Point(29, 94);
+            this.id.Name = "id";
+            this.id.Size = new System.Drawing.Size(250, 32);
+            this.id.TabIndex = 19;
             // 
             // button3
             // 
@@ -170,14 +170,14 @@
             this.panel4.Size = new System.Drawing.Size(250, 1);
             this.panel4.TabIndex = 26;
             // 
-            // textBox3
+            // name
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.textBox3.Font = new System.Drawing.Font("함초롬바탕 확장B", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox3.Location = new System.Drawing.Point(306, 94);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(250, 32);
-            this.textBox3.TabIndex = 25;
+            this.name.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.name.Font = new System.Drawing.Font("함초롬바탕 확장B", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.name.Location = new System.Drawing.Point(306, 94);
+            this.name.Name = "name";
+            this.name.Size = new System.Drawing.Size(250, 32);
+            this.name.TabIndex = 25;
             // 
             // label5
             // 
@@ -197,12 +197,12 @@
             this.panel5.Size = new System.Drawing.Size(250, 1);
             this.panel5.TabIndex = 29;
             // 
-            // comboBox1
+            // position
             // 
-            this.comboBox1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.comboBox1.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.position.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.position.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.position.FormattingEnabled = true;
+            this.position.Items.AddRange(new object[] {
             "사장",
             "부장",
             "과장",
@@ -210,10 +210,10 @@
             "주임",
             "사원",
             "인턴"});
-            this.comboBox1.Location = new System.Drawing.Point(306, 166);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(250, 27);
-            this.comboBox1.TabIndex = 31;
+            this.position.Location = new System.Drawing.Point(306, 166);
+            this.position.Name = "position";
+            this.position.Size = new System.Drawing.Size(250, 27);
+            this.position.TabIndex = 31;
             // 
             // join_membership_form
             // 
@@ -221,26 +221,27 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(570, 285);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.position);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.name);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.password);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.id);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "join_membership_form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "join_membership_form";
+            this.Load += new System.EventHandler(this.join_membership_form_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -254,16 +255,16 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox password;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox id;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox name;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox position;
     }
 }
