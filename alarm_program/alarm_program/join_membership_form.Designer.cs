@@ -62,11 +62,11 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("함초롬바탕 확장B", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(210, 7);
+            this.label2.Location = new System.Drawing.Point(196, 7);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(140, 45);
+            this.label2.Size = new System.Drawing.Size(170, 45);
             this.label2.TabIndex = 7;
-            this.label2.Text = "로그인창";
+            this.label2.Text = "회원가입창";
             // 
             // label3
             // 

@@ -20,6 +20,7 @@ namespace alarm_program
         string _id = "root"; //계정 아이디
         string _pw = "1234"; //계정 비밀번호
         string _connectionAddress = "";
+        int cash =0;
         public login_form()
         {
             InitializeComponent();
@@ -57,19 +58,28 @@ namespace alarm_program
                 using (MySqlConnection mysql = new MySqlConnection(_connectionAddress))
                 {
                     mysql.Open();
-                    //accounts_table의 전체 데이터를 조회합니다.            
+                    //login의 전체 데이터를 조회합니다.            
                     string selectQuery = string.Format("SELECT * FROM login");
 
                     MySqlCommand command = new MySqlCommand(selectQuery, mysql);
                     MySqlDataReader table = command.ExecuteReader();
                     while (table.Read())
                     {
-                        if (textBox1.Text == table["id"].ToString() && textBox2.Text == table["password"].ToString()) // 아이디 비밀번호 대조  
+                        if (textBox1.Text == table["id"].ToString() && textBox2.Text == table["password"].ToString()) // 아이디 비밀번호 대조해서 맞을시 
                         {
-                            MessageBox.Show("환영합니다.");
+                            cash = 1; // 캐시를 1로 지정 
                         }
                     }
+                    if (cash ==1)
+                    {
+                        MessageBox.Show("환영합니다.");
+                    }
+                    else
+                    {
+                        MessageBox.Show("회원정보를 확인해주세요");
+                    }
                     table.Close();
+                    cash=0;
                 }
             }
             catch (Exception exc)
