@@ -79,6 +79,12 @@ namespace alarm_program
                                 manger_form newform2 = new manger_form();
                                 newform2.ShowDialog();
                             }
+                            else
+                            {
+                                this.Visible = false;
+                                employee_form newform3 = new employee_form();
+                                newform3.ShowDialog();
+                            }
                         }
                         else
                         {

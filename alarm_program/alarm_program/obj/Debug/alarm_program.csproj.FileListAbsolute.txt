@@ -87,3 +87,4 @@ C:\Users\swl\Desktop\Code\software_teamproject\alarm_program\alarm_program\obj\D
 C:\Users\swl\Desktop\Code\software_teamproject\alarm_program\alarm_program\obj\Debug\alarm_program.csproj.CopyComplete
 C:\Users\swl\Desktop\Code\software_teamproject\alarm_program\alarm_program\obj\Debug\alarm_program.exe
 C:\Users\swl\Desktop\Code\software_teamproject\alarm_program\alarm_program\obj\Debug\alarm_program.pdb
+C:\Users\swl\Desktop\Code\software_teamproject\alarm_program\alarm_program\obj\Debug\alarm_program.employee_form.resources
