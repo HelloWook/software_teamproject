@@ -69,17 +69,24 @@ namespace alarm_program
                         {
                             cash = 1; // 캐시를 1로 지정 
                         }
+
+                        if (cash == 1)
+                        {
+                            MessageBox.Show("환영합니다.");
+                            if ("사장" == table["position"].ToString())
+                            {
+                                this.Visible = false;
+                                manger_form newform2 = new manger_form();
+                                newform2.ShowDialog();
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("회원정보를 확인해주세요");
+                        }
+                        table.Close();
+                        cash = 0;
                     }
-                    if (cash ==1)
-                    {
-                        MessageBox.Show("환영합니다.");
-                    }
-                    else
-                    {
-                        MessageBox.Show("회원정보를 확인해주세요");
-                    }
-                    table.Close();
-                    cash=0;
                 }
             }
             catch (Exception exc)

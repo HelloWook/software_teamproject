@@ -48,3 +48,4 @@ C:\Users\T-user\Desktop\code\software_teamproject\alarm_program\alarm_program\bi
 C:\Users\T-user\Desktop\code\software_teamproject\alarm_program\alarm_program\obj\Debug\alarm_program.join_membership_form.resources
 C:\Users\T-user\Desktop\code\software_teamproject\alarm_program\alarm_program\obj\Debug\alarm_program.csproj.AssemblyReference.cache
 C:\Users\T-user\Desktop\code\software_teamproject\alarm_program\alarm_program\obj\Debug\alarm_program.csproj.SuggestedBindingRedirects.cache
+C:\Users\T-user\Desktop\code\software_teamproject\alarm_program\alarm_program\obj\Debug\alarm_program.manger_form.resources

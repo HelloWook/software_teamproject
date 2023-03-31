@@ -41,6 +41,7 @@ namespace alarm_program
                     if (command.ExecuteNonQuery() != 1)
                         MessageBox.Show("Failed to insert data.");
                 }
+                
             }
             catch (Exception exc)
             {
@@ -56,6 +57,11 @@ namespace alarm_program
         }
 
         private void join_membership_form_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

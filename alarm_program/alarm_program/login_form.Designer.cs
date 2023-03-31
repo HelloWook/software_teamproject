@@ -111,10 +111,10 @@
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.textBox1.Font = new System.Drawing.Font("함초롬바탕 확장B", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox1.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textBox1.Location = new System.Drawing.Point(45, 117);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(250, 32);
+            this.textBox1.Size = new System.Drawing.Size(250, 29);
             this.textBox1.TabIndex = 9;
             // 
             // panel2
@@ -136,10 +136,10 @@
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.textBox2.Font = new System.Drawing.Font("함초롬바탕 확장B", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox2.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textBox2.Location = new System.Drawing.Point(45, 189);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(250, 32);
+            this.textBox2.Size = new System.Drawing.Size(250, 29);
             this.textBox2.TabIndex = 12;
             // 
             // label1
