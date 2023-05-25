@@ -32,11 +32,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.User_pictureBox = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.UserName_textBox = new System.Windows.Forms.TextBox();
-            this.UserRank_textBox = new System.Windows.Forms.TextBox();
             this.UserModify_Button = new System.Windows.Forms.Button();
             this.UserDelete_Button = new System.Windows.Forms.Button();
             this.Cancel_Button = new System.Windows.Forms.Button();
+            this.UserRank_Combobox = new System.Windows.Forms.ComboBox();
+            this.UserName_textBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.User_pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,24 +70,6 @@
             this.label2.Size = new System.Drawing.Size(46, 21);
             this.label2.TabIndex = 2;
             this.label2.Text = "직급:";
-            // 
-            // UserName_textBox
-            // 
-            this.UserName_textBox.BackColor = System.Drawing.Color.White;
-            this.UserName_textBox.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.UserName_textBox.Location = new System.Drawing.Point(202, 50);
-            this.UserName_textBox.Name = "UserName_textBox";
-            this.UserName_textBox.Size = new System.Drawing.Size(140, 29);
-            this.UserName_textBox.TabIndex = 3;
-            // 
-            // UserRank_textBox
-            // 
-            this.UserRank_textBox.BackColor = System.Drawing.Color.White;
-            this.UserRank_textBox.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.UserRank_textBox.Location = new System.Drawing.Point(202, 94);
-            this.UserRank_textBox.Name = "UserRank_textBox";
-            this.UserRank_textBox.Size = new System.Drawing.Size(140, 29);
-            this.UserRank_textBox.TabIndex = 4;
             // 
             // UserModify_Button
             // 
@@ -126,16 +108,43 @@
             this.Cancel_Button.UseVisualStyleBackColor = false;
             this.Cancel_Button.Click += new System.EventHandler(this.Cancel_Button_Click);
             // 
+            // UserRank_Combobox
+            // 
+            this.UserRank_Combobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.UserRank_Combobox.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.UserRank_Combobox.FormattingEnabled = true;
+            this.UserRank_Combobox.Items.AddRange(new object[] {
+            "사장",
+            "부장",
+            "차장",
+            "과장",
+            "대리",
+            "주임 ",
+            "사원\\"});
+            this.UserRank_Combobox.Location = new System.Drawing.Point(202, 97);
+            this.UserRank_Combobox.Name = "UserRank_Combobox";
+            this.UserRank_Combobox.Size = new System.Drawing.Size(140, 29);
+            this.UserRank_Combobox.TabIndex = 9;
+            // 
+            // UserName_textBox
+            // 
+            this.UserName_textBox.BackColor = System.Drawing.Color.White;
+            this.UserName_textBox.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.UserName_textBox.Location = new System.Drawing.Point(202, 50);
+            this.UserName_textBox.Name = "UserName_textBox";
+            this.UserName_textBox.Size = new System.Drawing.Size(140, 29);
+            this.UserName_textBox.TabIndex = 3;
+            // 
             // User_DetailsUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(374, 225);
+            this.Controls.Add(this.UserRank_Combobox);
             this.Controls.Add(this.Cancel_Button);
             this.Controls.Add(this.UserDelete_Button);
             this.Controls.Add(this.UserModify_Button);
-            this.Controls.Add(this.UserRank_textBox);
             this.Controls.Add(this.UserName_textBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.User_pictureBox);
@@ -154,10 +163,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox User_pictureBox;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox UserName_textBox;
-        private System.Windows.Forms.TextBox UserRank_textBox;
         private System.Windows.Forms.Button UserModify_Button;
         private System.Windows.Forms.Button UserDelete_Button;
         private System.Windows.Forms.Button Cancel_Button;
+        private System.Windows.Forms.ComboBox UserRank_Combobox;
+        private System.Windows.Forms.TextBox UserName_textBox;
     }
 }

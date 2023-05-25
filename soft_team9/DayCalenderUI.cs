@@ -39,7 +39,7 @@ namespace soft_team9
 
         private void MonthReturnButton_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }
