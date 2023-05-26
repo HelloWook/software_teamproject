@@ -82,6 +82,7 @@
             this.UserModify_Button.TabIndex = 5;
             this.UserModify_Button.Text = "수정";
             this.UserModify_Button.UseVisualStyleBackColor = false;
+            this.UserModify_Button.Click += new System.EventHandler(this.UserModify_Button_Click);
             // 
             // UserDelete_Button
             // 
@@ -120,7 +121,7 @@
             "과장",
             "대리",
             "주임 ",
-            "사원\\"});
+            "사원"});
             this.UserRank_Combobox.Location = new System.Drawing.Point(202, 97);
             this.UserRank_Combobox.Name = "UserRank_Combobox";
             this.UserRank_Combobox.Size = new System.Drawing.Size(140, 29);
@@ -152,6 +153,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "User_DetailsUI";
             this.Text = "User_DetailsUI";
+            this.Load += new System.EventHandler(this.User_DetailsUI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.User_pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -24,35 +24,38 @@ namespace soft_team9
             InitializeComponent();
             _connectionAddress = string.Format("Server={0};Port={1};Database={2};Uid={3};Pwd={4}", _server, _port, _database, _id, _pw);
         }
-        public void itemlist()
+ 
+        private void Cancel_Button_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void UserModify_Button_Click(object sender, EventArgs e)
         {
             try
             {
                 using (MySqlConnection mysql = new MySqlConnection(_connectionAddress))
                 {
                     mysql.Open();
-                    string selectQuery = string.Format("SELECT * FROM User");
+                    //accounts_table의 특정 id의 name column과 phone column 데이터를 수정합니다.
+                    string updateQuery = string.Format("UPDATE User SET class = '{1}' WHERE id={0};", UserName_textBox.Text, UserRank_Combobox.Text);
 
-                    MySqlCommand command = new MySqlCommand(selectQuery, mysql);
-                    MySqlDataReader table = command.ExecuteReader();
-                    while (table.Read())
-                    {
-                        if (UserName_textBox.Text == table["id"].ToString())
-                        {
-
-                        }
-
-                    }
+                    MySqlCommand command = new MySqlCommand(updateQuery, mysql);
+                    if (command.ExecuteNonQuery() != 1)
+                        MessageBox.Show("Faild to Update data.");
+                    UserName_textBox.Text = "";
                 }
             }
             catch (Exception exc)
             {
                 MessageBox.Show(exc.Message);
             }
+
         }
-        private void Cancel_Button_Click(object sender, EventArgs e)
+
+        private void User_DetailsUI_Load(object sender, EventArgs e)
         {
-            this.Close();
+
         }
     }
 }

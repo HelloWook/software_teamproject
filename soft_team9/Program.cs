@@ -16,7 +16,7 @@ namespace soft_team9
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginUI());
+            Application.Run(new User_DetailsUI());
         }
     }
 }
