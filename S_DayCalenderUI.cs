@@ -32,15 +32,16 @@ namespace soft_team9
             InitializeComponent();
             _connectionAddress = string.Format("Server={0};Port={1};Database={2};Uid={3};Pwd={4}", _server, _port, _database, _id, _pw);
         }
+
         private void DayCalenderUI_Load(object sender, EventArgs e)
-        {
+        {            
             try
             {
                 using(MySqlConnection mysql = new MySqlConnection(_connectionAddress))
                 {
                     mysql.Open();
 
-                    string selectQuery = "SELECT name, position FROM users WHERE id = @loginUI.UserID_textBox.Text";
+                    string selectQuery = "SELECT name, class FROM users WHERE id = @loginUI.UserID_textBox.Text";
                     
                     MySqlCommand command1 = new MySqlCommand(selectQuery, mysql);
                     MySqlDataReader table1 = command1.ExecuteReader();
@@ -83,24 +84,29 @@ namespace soft_team9
                     MySqlCommand command2 = new MySqlCommand(selectQuery2, mysql);
                     MySqlDataReader table2 = command2.ExecuteReader();
 
+                    string selectedDate = day.Value.ToString();
+
                     while (table1.Read() && table2.Read())
                     {
-                        if(table1["User"].ToString() == label3.Text)
+                        if (selectedDate == table1["day"].ToString())
                         {
-                            Schedule_Title[i] = table1["title"].ToString();
-                            Schedule_Location[i] = table1["location"].ToString();
-                            Schedule_inform[i] = $"{Schedule_Title[i]} , 장소: {Schedule_Location[i]}";
-                        }
-                        
-                        Announcement_Title[i] = table2["title"].ToString();
-                        Announcement_Location[i] = table2["location"].ToString();
-                        Announcement_Inform[i] = $"{Announcement_Title[i]} , 장소: {Announcement_Location[i]}";
+                            if (table1["User"].ToString() == label3.Text)
+                            {
+                                Schedule_Title[i] = table1["title"].ToString();
+                                Schedule_Location[i] = table1["location"].ToString();
+                                Schedule_inform[i] = $"{Schedule_Title[i]} , 장소: {Schedule_Location[i]}";
+                            }
 
-                        // id순서에 맞게 출력해줌 (시간순으로 스케줄, 공지사항을 띄움)
-                        Schedule_ListBox.Items.Add(Schedule_inform);
-                        Announcement_ListBox.Items.Add(Announcement_Inform);
+                            Announcement_Title[i] = table2["title"].ToString();
+                            Announcement_Location[i] = table2["location"].ToString();
+                            Announcement_Inform[i] = $"{Announcement_Title[i]} , 장소: {Announcement_Location[i]}";
 
-                        i++;
+                            // id순서에 맞게 출력해줌 (시간순으로 스케줄, 공지사항을 띄움)
+                            Schedule_ListBox.Items.Add(Schedule_inform);
+                            Announcement_ListBox.Items.Add(Announcement_Inform);
+
+                            i++;
+                        }                       
                     }                   
                     table1.Close();
                     table2.Close();
@@ -179,6 +185,6 @@ namespace soft_team9
         private void MonthReturnButton_Click(object sender, EventArgs e)
         {
             this.Close(); //창 닫기(종료)
-        }
+        }        
     }
 }

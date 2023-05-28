@@ -47,16 +47,20 @@ namespace soft_team9
                     
                     MySqlCommand command = new MySqlCommand(selectQuery, mysql);
                     MySqlDataReader table = command.ExecuteReader();
-                    
 
-                    while (table.Read() )
-                    {                        
-                        Announcement_Title[i] = table["title"].ToString();
-                        Announcement_Location[i] = table["location"].ToString();
-                        Announcement_Inform[i] = $"{Announcement_Title[i]} , 장소: {Announcement_Location[i]}";
+                    string selectedDate = day.Value.ToString();
 
-                        Announcement_ListBox.Items.Add(Announcement_Inform);
-                        i++;
+                    while (table.Read())
+                    {                   
+                        if(selectedDate == table["day"].ToString())
+                        {
+                            Announcement_Title[i] = table["title"].ToString();
+                            Announcement_Location[i] = table["location"].ToString();
+                            Announcement_Inform[i] = $"{Announcement_Title[i]} , 장소: {Announcement_Location[i]}";
+
+                            Announcement_ListBox.Items.Add(Announcement_Inform);
+                            i++;
+                        }                       
                     }                   
                     table.Close();                   
                 }
@@ -66,7 +70,6 @@ namespace soft_team9
                 Console.WriteLine("실패");
                 Console.WriteLine(ex.ToString());
             }
-
         }
 
         private void LogOutbutton_Click(object sender, EventArgs e)
