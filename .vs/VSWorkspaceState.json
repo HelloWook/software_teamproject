@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\alarm_program",
-    "\\alarm_program\\alarm_program"
+    "\\soft_team9"
   ],
-  "SelectedNode": "\\alarm_program\\alarm_program\\login_form.cs",
+  "SelectedNode": "\\soft_team9\\User_DetailsUI.cs",
   "PreviewInSolutionExplorer": false
 }
