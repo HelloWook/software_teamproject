@@ -34,7 +34,7 @@ namespace soft_team9
                 {
                     mysql.Open();
                     //accounts_table에 name, phone column 데이터를 삽입합니다. id는 자동으로 증가합니다.
-                    string insertQuery = string.Format("INSERT INTO User (name, id, password, class) VALUES ('{0}', '{1}', '{2}', '{3}');", MemberShipName_textBox.Text, MemberShipID_textBox.Text, MemberShipPW_textBox.Text, MemberShipRANK_combobox.Text);
+                    string insertQuery = string.Format("INSERT INTO User (name, id, password, class) VALUES ('{0}', '{1}', '{2}', '{3}');", MembershipUserName_TextBox.Text, MembershipID_Textbox.Text, MembershipPW_Textbox.Text, MembershipRank_comboBox.Text);
                     MySqlCommand command = new MySqlCommand(insertQuery, mysql);
                     if (command.ExecuteNonQuery() != 1)
                         MessageBox.Show("이미 존재하는 아이디 입니다.");
