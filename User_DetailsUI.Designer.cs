@@ -142,6 +142,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "User_DetailsUI";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "User_DetailsUI";
             ((System.ComponentModel.ISupportInitialize)(this.User_pictureBox)).EndInit();
             this.ResumeLayout(false);

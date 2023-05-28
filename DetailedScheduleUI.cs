@@ -29,7 +29,7 @@ namespace soft_team9
 
         private void DayReturnButton_Click(object sender, EventArgs e)
         {
-            DayCalenderUI dayCalenderUI = new DayCalenderUI();
+            S_DayCalenderUI dayCalenderUI = new S_DayCalenderUI();
             dayCalenderUI.Show();
         }
 

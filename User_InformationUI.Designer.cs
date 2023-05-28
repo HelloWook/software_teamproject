@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(User_InformationUI));
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.LogOutbutton = new System.Windows.Forms.Button();
             this.DayReturnButton = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.name = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -63,6 +63,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(729, 467);
             this.panel1.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Location = new System.Drawing.Point(17, 22);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(691, 423);
+            this.panel2.TabIndex = 0;
             // 
             // pictureBox1
             // 
@@ -100,14 +108,6 @@
             this.DayReturnButton.Text = "나가기";
             this.DayReturnButton.UseVisualStyleBackColor = false;
             this.DayReturnButton.Click += new System.EventHandler(this.DayReturnButton_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Location = new System.Drawing.Point(17, 22);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(691, 423);
-            this.panel2.TabIndex = 0;
             // 
             // label4
             // 
@@ -172,6 +172,7 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "User_InformationUI";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "User_InformationUI";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

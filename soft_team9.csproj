@@ -86,11 +86,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DayCalenderUI.cs">
+    <Compile Include="A_DayCalenderUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DayCalenderUI.Designer.cs">
-      <DependentUpon>DayCalenderUI.cs</DependentUpon>
+    <Compile Include="A_DayCalenderUI.Designer.cs">
+      <DependentUpon>A_DayCalenderUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MembershipUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MembershipUI.Designer.cs">
+      <DependentUpon>MembershipUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="S_DayCalenderUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="S_DayCalenderUI.Designer.cs">
+      <DependentUpon>S_DayCalenderUI.cs</DependentUpon>
     </Compile>
     <Compile Include="DetailedScheduleUI.cs">
       <SubType>Form</SubType>
@@ -118,8 +130,14 @@
     <Compile Include="User_InformationUI.Designer.cs">
       <DependentUpon>User_InformationUI.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="DayCalenderUI.resx">
-      <DependentUpon>DayCalenderUI.cs</DependentUpon>
+    <EmbeddedResource Include="A_DayCalenderUI.resx">
+      <DependentUpon>A_DayCalenderUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MembershipUI.resx">
+      <DependentUpon>MembershipUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="S_DayCalenderUI.resx">
+      <DependentUpon>S_DayCalenderUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DetailedScheduleUI.resx">
       <DependentUpon>DetailedScheduleUI.cs</DependentUpon>
