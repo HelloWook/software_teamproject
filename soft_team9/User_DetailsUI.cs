@@ -38,7 +38,7 @@ namespace soft_team9
                 {
                     mysql.Open();
                     //accounts_table의 특정 id의 name column과 phone column 데이터를 수정합니다.
-                    string updateQuery = string.Format("UPDATE User SET class = '{1}' WHERE id={0};", UserName_textBox.Text, UserRank_Combobox.Text);
+                    string updateQuery = string.Format("UPDATE User SET class = '{1}' WHERE id='{0}';", UserName_textBox.Text, UserRank_Combobox.Text);
 
                     MySqlCommand command = new MySqlCommand(updateQuery, mysql);
                     if (command.ExecuteNonQuery() != 1)
@@ -50,12 +50,33 @@ namespace soft_team9
             {
                 MessageBox.Show(exc.Message);
             }
-
         }
 
         private void User_DetailsUI_Load(object sender, EventArgs e)
         {
+        }
 
+        private void UserDelete_Button_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (MySqlConnection mysql = new MySqlConnection(_connectionAddress))
+                {
+                    mysql.Open();
+                    //accounts_table에서 특정 id의 데이터를 삭제합니다.
+                    string deleteQuery = string.Format("DELETE FROM User WHERE id='{0}';", UserName_textBox.Text);
+
+
+                    MySqlCommand command = new MySqlCommand(deleteQuery, mysql);
+                    if (command.ExecuteNonQuery() != 1)
+                        MessageBox.Show("Failed to delete data.");
+
+                }
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show(exc.Message);
+            }
         }
     }
 }
