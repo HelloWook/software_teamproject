@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 ﻿using MySql.Data.MySqlClient;
 using System;
+=======
+﻿using System;
+>>>>>>> 정욱
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +17,7 @@ namespace soft_team9
 {
     public partial class DetailedScheduleUI : Form
     {
+<<<<<<< HEAD
         string _server = "wook.cgnexsu6jcqf.ap-northeast-2.rds.amazonaws.com"; //DB 서버 주소, 로컬일 경우 localhost
         int _port = 3306; //DB 서버 포트
         string _database = "new_schema"; //DB 이름
@@ -33,10 +38,16 @@ namespace soft_team9
             _connectionAddress = string.Format("Server={0};Port={1};Database={2};Uid={3};Pwd={4}", _server, _port, _database, _id, _pw);
             ScheduleTitle_textBox.Text = title;
             ScheduleContents_textBox.Text = content;
+=======
+        public DetailedScheduleUI()
+        {
+            InitializeComponent();
+>>>>>>> 정욱
         }
 
         private void Check_Button_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             try
             {
                 using (MySqlConnection mysql = new MySqlConnection(_connectionAddress))
@@ -57,26 +68,41 @@ namespace soft_team9
                 MessageBox.Show(exc.Message);
             }
             
+=======
+
+>>>>>>> 정욱
         }
 
         private void Cancel_Button_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             this.Close();
+=======
+
+>>>>>>> 정욱
         }
 
         private void DayReturnButton_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             
+=======
+            DayCalenderUI dayCalenderUI = new DayCalenderUI();
+            dayCalenderUI.Show();
+>>>>>>> 정욱
         }
 
         private void Repetition_On_Button_Click(object sender, EventArgs e)
         {
 
         }
+<<<<<<< HEAD
 
         internal void ShowDialog(string copy_title, string copy_content)
         {
             throw new NotImplementedException();
         }
+=======
+>>>>>>> 정욱
     }
 }

@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 ﻿using MySql.Data.MySqlClient;
 using System;
+=======
+﻿using System;
+>>>>>>> 정욱
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +17,7 @@ namespace soft_team9
 {
     public partial class DayCalenderUI : Form
     {
+<<<<<<< HEAD
         string _server = "wook.cgnexsu6jcqf.ap-northeast-2.rds.amazonaws.com"; //DB 서버 주소, 로컬일 경우 localhost
         int _port = 3306; //DB 서버 포트
         string _database = "new_schema"; //DB 이름
@@ -77,26 +82,40 @@ namespace soft_team9
             {
                 MessageBox.Show(exc.Message);
             }
+=======
+        public DayCalenderUI()
+        {
+            InitializeComponent();
+>>>>>>> 정욱
         }
 
         private void LogOutbutton_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             using (LoginUI loginUI1 = new LoginUI())
             {
                 this.Hide();
                 loginUI1.ShowDialog();
             }
             this.Close();
+=======
+
+>>>>>>> 정욱
         }
 
         private void ScheduleAddButton_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             DetailedScheduleUI scheduleUI = new DetailedScheduleUI();
             scheduleUI.ShowDialog();
+=======
+
+>>>>>>> 정욱
         }
 
         private void ScheduleModifyButton_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             if (Schedule_listview.SelectedItems.Count != 0)
             {
                 if (MessageBox.Show("스케줄을 수정하시겠습니까?", "스케줄 수정", MessageBoxButtons.YesNo) == DialogResult.Yes)
@@ -109,10 +128,14 @@ namespace soft_team9
                     MessageBox.Show("스케줄 수정이 취소되었습니다.");
                 }
             }
+=======
+
+>>>>>>> 정욱
         }
 
         private void ScheduleDeleteButton_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             if(Schedule_listview.SelectedItems.Count != 0)
             {
                 if(MessageBox.Show("스케줄을 삭제하시겠습니까?","스케줄 삭제",MessageBoxButtons.YesNo)==DialogResult.Yes)
@@ -144,12 +167,16 @@ namespace soft_team9
                 }
             }
             
+=======
+
+>>>>>>> 정욱
         }
 
         private void MonthReturnButton_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+<<<<<<< HEAD
 
         private void DayCalenderUI_Load(object sender, EventArgs e)
         {
@@ -187,5 +214,7 @@ namespace soft_team9
             DetailedScheduleUI scheduleUI = new DetailedScheduleUI(copy_title,copy_content);
             scheduleUI.Show();
         }
+=======
+>>>>>>> 정욱
     }
 }

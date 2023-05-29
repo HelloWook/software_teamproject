@@ -40,6 +40,7 @@ C:\Users\T-user\Desktop\code\software_teamproject\soft_team9\bin\Debug\System.Nu
 C:\Users\T-user\Desktop\code\software_teamproject\soft_team9\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\T-user\Desktop\code\software_teamproject\soft_team9\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\T-user\Desktop\code\software_teamproject\soft_team9\obj\Debug\soft_team9.csproj.CopyComplete
+<<<<<<< HEAD
 C:\Users\jjoon\Desktop\software_teamproject--\soft_team9\bin\Debug\soft_team9.exe.config
 C:\Users\jjoon\Desktop\software_teamproject--\soft_team9\bin\Debug\soft_team9.exe
 C:\Users\jjoon\Desktop\software_teamproject--\soft_team9\bin\Debug\soft_team9.pdb
@@ -82,3 +83,5 @@ C:\Users\jjoon\Desktop\software_teamproject--\soft_team9\obj\Debug\soft_team9.cs
 C:\Users\jjoon\Desktop\software_teamproject--\soft_team9\obj\Debug\soft_team9.csproj.CopyComplete
 C:\Users\jjoon\Desktop\software_teamproject--\soft_team9\obj\Debug\soft_team9.exe
 C:\Users\jjoon\Desktop\software_teamproject--\soft_team9\obj\Debug\soft_team9.pdb
+=======
+>>>>>>> 정욱
