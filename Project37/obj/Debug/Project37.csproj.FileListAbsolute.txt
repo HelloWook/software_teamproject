@@ -1,0 +1,2 @@
+C:\Users\chaew\source\repos\Project37\Project37\obj\Debug\Project37.csproj.AssemblyReference.cache
+C:\Users\chaew\source\repos\Project37\Project37\obj\Debug\Project37.csproj.CoreCompileInputs.cache
