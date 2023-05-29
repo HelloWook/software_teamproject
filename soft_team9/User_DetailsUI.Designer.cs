@@ -44,11 +44,19 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+<<<<<<< HEAD
+            this.label1.Location = new System.Drawing.Point(150, 53);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(46, 21);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "이름:";
+=======
             this.label1.Location = new System.Drawing.Point(159, 53);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(31, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "ID:";
+>>>>>>> 정욱
             // 
             // User_pictureBox
             // 
@@ -95,7 +103,10 @@
             this.UserDelete_Button.TabIndex = 6;
             this.UserDelete_Button.Text = "삭제";
             this.UserDelete_Button.UseVisualStyleBackColor = false;
+<<<<<<< HEAD
+=======
             this.UserDelete_Button.Click += new System.EventHandler(this.UserDelete_Button_Click);
+>>>>>>> 정욱
             // 
             // Cancel_Button
             // 

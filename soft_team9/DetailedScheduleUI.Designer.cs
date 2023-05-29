@@ -32,6 +32,33 @@
             this.Detailed_day = new System.Windows.Forms.DateTimePicker();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+<<<<<<< HEAD
+            this.label7 = new System.Windows.Forms.Label();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.AlarmAdd_Button = new System.Windows.Forms.Button();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.Alarm_Delete_Button = new System.Windows.Forms.Button();
+            this.AlarmDateTime_Hour = new System.Windows.Forms.NumericUpDown();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.Alarm_offButton = new System.Windows.Forms.Button();
+            this.Alarm_onButton = new System.Windows.Forms.Button();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.Repetition_Off_Button = new System.Windows.Forms.Button();
+            this.Repetition_On_Button = new System.Windows.Forms.Button();
+            this.AlarmName = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.Schedule_summary = new System.Windows.Forms.Label();
+            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
+            this.ScheduleContents_textBox = new System.Windows.Forms.TextBox();
+            this.ScheduleLocation_textBox = new System.Windows.Forms.TextBox();
+            this.ScheduleTitle_textBox = new System.Windows.Forms.TextBox();
+=======
             this.panel2 = new System.Windows.Forms.Panel();
             this.ScheduleContents_textBox = new System.Windows.Forms.TextBox();
             this.Schedule_summary = new System.Windows.Forms.Label();
@@ -39,6 +66,7 @@
             this.ScheduleTitle_textBox = new System.Windows.Forms.TextBox();
             this.Alarm_offButton = new System.Windows.Forms.Button();
             this.Alarm_onButton = new System.Windows.Forms.Button();
+>>>>>>> 정욱
             this.label5 = new System.Windows.Forms.Label();
             this.Title = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -51,6 +79,15 @@
             this.DayReturnButton = new System.Windows.Forms.Button();
             this.Check_Button = new System.Windows.Forms.Button();
             this.Cancel_Button = new System.Windows.Forms.Button();
+<<<<<<< HEAD
+            this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AlarmDateTime_Hour)).BeginInit();
+            this.panel4.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+=======
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
@@ -76,6 +113,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AlarmDateTime_Hour)).BeginInit();
             this.panel4.SuspendLayout();
+>>>>>>> 정욱
             this.SuspendLayout();
             // 
             // Detailed_day
@@ -125,6 +163,136 @@
             this.panel3.Size = new System.Drawing.Size(358, 411);
             this.panel3.TabIndex = 10;
             // 
+<<<<<<< HEAD
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label7.Location = new System.Drawing.Point(106, 5);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(137, 25);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "< 알람 설정 >";
+            // 
+            // linkLabel2
+            // 
+            this.linkLabel2.ActiveLinkColor = System.Drawing.Color.Black;
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.LinkColor = System.Drawing.Color.DimGray;
+            this.linkLabel2.Location = new System.Drawing.Point(4, 21);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(349, 12);
+            this.linkLabel2.TabIndex = 25;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "                                                                                 " +
+    "     ";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3.Location = new System.Drawing.Point(12, 86);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(43, 20);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "시간:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label6.Location = new System.Drawing.Point(189, 80);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(17, 25);
+            this.label6.TabIndex = 19;
+            this.label6.Text = ":";
+            // 
+            // AlarmAdd_Button
+            // 
+            this.AlarmAdd_Button.BackColor = System.Drawing.Color.White;
+            this.AlarmAdd_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AlarmAdd_Button.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.AlarmAdd_Button.Location = new System.Drawing.Point(45, 353);
+            this.AlarmAdd_Button.Name = "AlarmAdd_Button";
+            this.AlarmAdd_Button.Size = new System.Drawing.Size(67, 29);
+            this.AlarmAdd_Button.TabIndex = 22;
+            this.AlarmAdd_Button.Text = "저장";
+            this.AlarmAdd_Button.UseVisualStyleBackColor = false;
+            // 
+            // numericUpDown2
+            // 
+            this.numericUpDown2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.numericUpDown2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.numericUpDown2.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.numericUpDown2.Location = new System.Drawing.Point(227, 82);
+            this.numericUpDown2.Maximum = new decimal(new int[] {
+            59,
+            0,
+            0,
+            0});
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(95, 29);
+            this.numericUpDown2.TabIndex = 18;
+            this.numericUpDown2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Alarm_Delete_Button
+            // 
+            this.Alarm_Delete_Button.BackColor = System.Drawing.Color.White;
+            this.Alarm_Delete_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Alarm_Delete_Button.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Alarm_Delete_Button.Location = new System.Drawing.Point(148, 353);
+            this.Alarm_Delete_Button.Name = "Alarm_Delete_Button";
+            this.Alarm_Delete_Button.Size = new System.Drawing.Size(67, 29);
+            this.Alarm_Delete_Button.TabIndex = 23;
+            this.Alarm_Delete_Button.Text = "삭제";
+            this.Alarm_Delete_Button.UseVisualStyleBackColor = false;
+            // 
+            // AlarmDateTime_Hour
+            // 
+            this.AlarmDateTime_Hour.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.AlarmDateTime_Hour.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.AlarmDateTime_Hour.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.AlarmDateTime_Hour.Location = new System.Drawing.Point(74, 82);
+            this.AlarmDateTime_Hour.Maximum = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
+            this.AlarmDateTime_Hour.Name = "AlarmDateTime_Hour";
+            this.AlarmDateTime_Hour.Size = new System.Drawing.Size(95, 29);
+            this.AlarmDateTime_Hour.TabIndex = 17;
+            this.AlarmDateTime_Hour.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button1.Location = new System.Drawing.Point(255, 353);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(67, 29);
+            this.button1.TabIndex = 24;
+            this.button1.Text = "취소";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.Alarm_offButton);
+            this.panel4.Controls.Add(this.Alarm_onButton);
+            this.panel4.Controls.Add(this.linkLabel1);
+            this.panel4.Controls.Add(this.label10);
+            this.panel4.Controls.Add(this.Repetition_Off_Button);
+            this.panel4.Controls.Add(this.Repetition_On_Button);
+            this.panel4.Controls.Add(this.AlarmName);
+            this.panel4.Controls.Add(this.label9);
+            this.panel4.Controls.Add(this.label8);
+            this.panel4.Location = new System.Drawing.Point(6, 134);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(345, 136);
+            this.panel4.TabIndex = 21;
+=======
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -178,6 +346,7 @@
             this.ScheduleTitle_textBox.Size = new System.Drawing.Size(294, 22);
             this.ScheduleTitle_textBox.TabIndex = 7;
             this.ScheduleTitle_textBox.Text = "스케줄 제목";
+>>>>>>> 정욱
             // 
             // Alarm_offButton
             // 
@@ -203,6 +372,154 @@
             this.Alarm_onButton.TabIndex = 5;
             this.Alarm_onButton.UseVisualStyleBackColor = false;
             // 
+<<<<<<< HEAD
+            // linkLabel1
+            // 
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.Black;
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.LinkColor = System.Drawing.Color.DimGray;
+            this.linkLabel1.Location = new System.Drawing.Point(3, 39);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(337, 12);
+            this.linkLabel1.TabIndex = 4;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "                                                                                 " +
+    "  ";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label10.Location = new System.Drawing.Point(3, 17);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(99, 20);
+            this.label10.TabIndex = 8;
+            this.label10.Text = "알람 on/ off:";
+            // 
+            // Repetition_Off_Button
+            // 
+            this.Repetition_Off_Button.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Repetition_Off_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Repetition_Off_Button.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Repetition_Off_Button.Location = new System.Drawing.Point(280, 101);
+            this.Repetition_Off_Button.Name = "Repetition_Off_Button";
+            this.Repetition_Off_Button.Size = new System.Drawing.Size(54, 28);
+            this.Repetition_Off_Button.TabIndex = 7;
+            this.Repetition_Off_Button.Text = "OFF";
+            this.Repetition_Off_Button.UseVisualStyleBackColor = false;
+            // 
+            // Repetition_On_Button
+            // 
+            this.Repetition_On_Button.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Repetition_On_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Repetition_On_Button.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Repetition_On_Button.Location = new System.Drawing.Point(214, 101);
+            this.Repetition_On_Button.Name = "Repetition_On_Button";
+            this.Repetition_On_Button.Size = new System.Drawing.Size(54, 28);
+            this.Repetition_On_Button.TabIndex = 6;
+            this.Repetition_On_Button.Text = "ON";
+            this.Repetition_On_Button.UseVisualStyleBackColor = false;
+            this.Repetition_On_Button.Click += new System.EventHandler(this.Repetition_On_Button_Click);
+            // 
+            // AlarmName
+            // 
+            this.AlarmName.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.AlarmName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.AlarmName.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.AlarmName.Location = new System.Drawing.Point(57, 63);
+            this.AlarmName.Name = "AlarmName";
+            this.AlarmName.Size = new System.Drawing.Size(278, 20);
+            this.AlarmName.TabIndex = 2;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label9.Location = new System.Drawing.Point(5, 101);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(78, 20);
+            this.label9.TabIndex = 1;
+            this.label9.Text = "다시 알림:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label8.Location = new System.Drawing.Point(5, 63);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(58, 20);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "레이블:";
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.Schedule_summary);
+            this.panel2.Controls.Add(this.linkLabel3);
+            this.panel2.Controls.Add(this.ScheduleContents_textBox);
+            this.panel2.Location = new System.Drawing.Point(3, 41);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(358, 411);
+            this.panel2.TabIndex = 9;
+            // 
+            // Schedule_summary
+            // 
+            this.Schedule_summary.AutoSize = true;
+            this.Schedule_summary.BackColor = System.Drawing.Color.White;
+            this.Schedule_summary.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Schedule_summary.Location = new System.Drawing.Point(6, 5);
+            this.Schedule_summary.Name = "Schedule_summary";
+            this.Schedule_summary.Size = new System.Drawing.Size(52, 21);
+            this.Schedule_summary.TabIndex = 2;
+            this.Schedule_summary.Text = "내용: ";
+            // 
+            // linkLabel3
+            // 
+            this.linkLabel3.ActiveLinkColor = System.Drawing.Color.Black;
+            this.linkLabel3.AutoSize = true;
+            this.linkLabel3.LinkColor = System.Drawing.Color.DimGray;
+            this.linkLabel3.Location = new System.Drawing.Point(3, 21);
+            this.linkLabel3.Name = "linkLabel3";
+            this.linkLabel3.Size = new System.Drawing.Size(349, 12);
+            this.linkLabel3.TabIndex = 26;
+            this.linkLabel3.TabStop = true;
+            this.linkLabel3.Text = "                                                                                 " +
+    "     ";
+            // 
+            // ScheduleContents_textBox
+            // 
+            this.ScheduleContents_textBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ScheduleContents_textBox.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.ScheduleContents_textBox.Location = new System.Drawing.Point(-1, 36);
+            this.ScheduleContents_textBox.Multiline = true;
+            this.ScheduleContents_textBox.Name = "ScheduleContents_textBox";
+            this.ScheduleContents_textBox.Size = new System.Drawing.Size(357, 374);
+            this.ScheduleContents_textBox.TabIndex = 3;
+            // 
+            // ScheduleLocation_textBox
+            // 
+            this.ScheduleLocation_textBox.BackColor = System.Drawing.Color.MistyRose;
+            this.ScheduleLocation_textBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ScheduleLocation_textBox.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.ScheduleLocation_textBox.Location = new System.Drawing.Point(467, 7);
+            this.ScheduleLocation_textBox.Name = "ScheduleLocation_textBox";
+            this.ScheduleLocation_textBox.Size = new System.Drawing.Size(255, 22);
+            this.ScheduleLocation_textBox.TabIndex = 8;
+            this.ScheduleLocation_textBox.Text = "장소";
+            // 
+            // ScheduleTitle_textBox
+            // 
+            this.ScheduleTitle_textBox.BackColor = System.Drawing.Color.MistyRose;
+            this.ScheduleTitle_textBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ScheduleTitle_textBox.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.ScheduleTitle_textBox.Location = new System.Drawing.Point(46, 6);
+            this.ScheduleTitle_textBox.Name = "ScheduleTitle_textBox";
+            this.ScheduleTitle_textBox.Size = new System.Drawing.Size(294, 22);
+            this.ScheduleTitle_textBox.TabIndex = 7;
+            this.ScheduleTitle_textBox.Text = "스케줄 제목";
+            // 
+=======
+>>>>>>> 정욱
             // label5
             // 
             this.label5.AutoSize = true;
@@ -340,6 +657,8 @@
             this.Cancel_Button.UseVisualStyleBackColor = false;
             this.Cancel_Button.Click += new System.EventHandler(this.Cancel_Button_Click);
             // 
+<<<<<<< HEAD
+=======
             // label3
             // 
             this.label3.AutoSize = true;
@@ -560,6 +879,7 @@
             this.linkLabel3.Text = "                                                                                 " +
     "     ";
             // 
+>>>>>>> 정욱
             // DetailedScheduleUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -586,13 +906,22 @@
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+<<<<<<< HEAD
+=======
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+>>>>>>> 정욱
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AlarmDateTime_Hour)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+<<<<<<< HEAD
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+=======
+>>>>>>> 정욱
             this.ResumeLayout(false);
             this.PerformLayout();
 

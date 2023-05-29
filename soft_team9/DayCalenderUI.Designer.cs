@@ -30,7 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DayCalenderUI));
             this.day = new System.Windows.Forms.DateTimePicker();
+<<<<<<< HEAD
+=======
             this.Schedule_ListBox = new System.Windows.Forms.ListBox();
+>>>>>>> 정욱
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,6 +44,13 @@
             this.ScheduleModifyButton = new System.Windows.Forms.Button();
             this.ScheduleDeleteButton = new System.Windows.Forms.Button();
             this.MonthReturnButton = new System.Windows.Forms.Button();
+<<<<<<< HEAD
+            this.Schedule_listview = new System.Windows.Forms.ListView();
+            this.id = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.title = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.alarm = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+=======
+>>>>>>> 정욱
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,6 +66,9 @@
             this.day.Name = "day";
             this.day.Size = new System.Drawing.Size(200, 46);
             this.day.TabIndex = 0;
+<<<<<<< HEAD
+            this.day.ValueChanged += new System.EventHandler(this.day_ValueChanged);
+=======
             // 
             // Schedule_ListBox
             // 
@@ -66,6 +79,7 @@
             this.Schedule_ListBox.Name = "Schedule_ListBox";
             this.Schedule_ListBox.Size = new System.Drawing.Size(727, 458);
             this.Schedule_ListBox.TabIndex = 1;
+>>>>>>> 정욱
             // 
             // pictureBox1
             // 
@@ -187,6 +201,39 @@
             this.MonthReturnButton.UseVisualStyleBackColor = false;
             this.MonthReturnButton.Click += new System.EventHandler(this.MonthReturnButton_Click);
             // 
+<<<<<<< HEAD
+            // Schedule_listview
+            // 
+            this.Schedule_listview.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.id,
+            this.title,
+            this.alarm});
+            this.Schedule_listview.FullRowSelect = true;
+            this.Schedule_listview.GridLines = true;
+            this.Schedule_listview.HideSelection = false;
+            this.Schedule_listview.Location = new System.Drawing.Point(30, 80);
+            this.Schedule_listview.Name = "Schedule_listview";
+            this.Schedule_listview.Size = new System.Drawing.Size(714, 461);
+            this.Schedule_listview.TabIndex = 12;
+            this.Schedule_listview.UseCompatibleStateImageBehavior = false;
+            this.Schedule_listview.View = System.Windows.Forms.View.Details;
+            this.Schedule_listview.DoubleClick += new System.EventHandler(this.Schedule_listview_DoubleClick);
+            // 
+            // id
+            // 
+            this.id.Text = "id";
+            // 
+            // title
+            // 
+            this.title.Text = "title";
+            this.title.Width = 200;
+            // 
+            // alarm
+            // 
+            this.alarm.Text = "alarm";
+            // 
+=======
+>>>>>>> 정욱
             // DayCalenderUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -194,6 +241,10 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(910, 562);
+<<<<<<< HEAD
+            this.Controls.Add(this.Schedule_listview);
+=======
+>>>>>>> 정욱
             this.Controls.Add(this.MonthReturnButton);
             this.Controls.Add(this.ScheduleDeleteButton);
             this.Controls.Add(this.ScheduleModifyButton);
@@ -204,12 +255,19 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+<<<<<<< HEAD
+=======
             this.Controls.Add(this.Schedule_ListBox);
+>>>>>>> 정욱
             this.Controls.Add(this.day);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DayCalenderUI";
             this.Text = "DayCalenderUI";
+<<<<<<< HEAD
+            this.Load += new System.EventHandler(this.DayCalenderUI_Load);
+=======
+>>>>>>> 정욱
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -219,7 +277,10 @@
         #endregion
 
         private System.Windows.Forms.DateTimePicker day;
+<<<<<<< HEAD
+=======
         private System.Windows.Forms.ListBox Schedule_ListBox;
+>>>>>>> 정욱
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -230,6 +291,13 @@
         private System.Windows.Forms.Button ScheduleModifyButton;
         private System.Windows.Forms.Button ScheduleDeleteButton;
         private System.Windows.Forms.Button MonthReturnButton;
+<<<<<<< HEAD
+        private System.Windows.Forms.ListView Schedule_listview;
+        private System.Windows.Forms.ColumnHeader id;
+        private System.Windows.Forms.ColumnHeader title;
+        private System.Windows.Forms.ColumnHeader alarm;
+=======
+>>>>>>> 정욱
     }
 }
 

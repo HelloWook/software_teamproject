@@ -16,7 +16,11 @@ namespace soft_team9
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
+            Application.Run(new LoginUI());
+=======
             Application.Run(new User_DetailsUI());
+>>>>>>> 정욱
         }
     }
 }
