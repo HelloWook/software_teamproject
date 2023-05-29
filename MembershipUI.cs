@@ -26,7 +26,7 @@ namespace soft_team9
             _connectionAddress = string.Format("Server={0};Port={1};Database={2};Uid={3};Pwd={4}", _server, _port, _database, _id, _pw);
         }
 
-        private void MembershipJoin_Button_Click(object sender, EventArgs e)
+        public void MembershipJoin()
         {
             try
             {
@@ -49,6 +49,11 @@ namespace soft_team9
             {
                 MessageBox.Show(exc.Message);
             }
+        }
+
+        private void MembershipJoin_Button_Click(object sender, EventArgs e)
+        {
+            MembershipJoin();
         }
 
         private void MembershipCancel_Button_Click(object sender, EventArgs e)

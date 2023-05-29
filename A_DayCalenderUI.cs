@@ -14,7 +14,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace soft_team9
 {
-    public partial class DayCalenderUI : Form
+    public partial class A_DayCalenderUI : Form
     {      
         string _server = "wook.cgnexsu6jcqf.ap-northeast-2.rds.amazonaws.com"; //DB 서버 주소, 로컬일 경우 localhost
         int _port = 3306; //DB 서버 포트
@@ -25,7 +25,7 @@ namespace soft_team9
         
         LoginUI loginUI;
 
-        public DayCalenderUI()
+        public A_DayCalenderUI()
         {
             InitializeComponent();
             _connectionAddress = string.Format("Server={0};Port={1};Database={2};Uid={3};Pwd={4}", _server, _port, _database, _id, _pw);
@@ -78,7 +78,7 @@ namespace soft_team9
 
             if (MessageBox.Show("로그아웃하시겠습니까?", "Logout", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
-                this.Close();
+                this.Hide();
                 LoginUI loginUI = new LoginUI();
                 loginUI.Show();
             }
@@ -92,7 +92,7 @@ namespace soft_team9
         private void AnnouncementAddButton_Click(object sender, EventArgs e)
         {
             // 현재 창은 닫고, 수정하는 창 띄어줌
-            this.Close();
+            this.Hide();
             DetailedScheduleUI detailedScheduleUI = new DetailedScheduleUI();
             detailedScheduleUI.Show();
         }
@@ -100,10 +100,11 @@ namespace soft_team9
         private void AnnouncementButton_Click(object sender, EventArgs e)
         {
             // 현재 창은 닫고, 수정하는 창 띄어줌
-            this.Close();
+            this.Hide();
             DetailedScheduleUI detailedScheduleUI = new DetailedScheduleUI();
             detailedScheduleUI.Show();
         }
+
         public void Announcement_Delete()
         {
             if (MessageBox.Show("삭제하시겠습니까?", "Schedule Delete", MessageBoxButtons.OKCancel) == DialogResult.OK)

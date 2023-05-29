@@ -100,6 +100,7 @@
             this.UserModify_Button.TabIndex = 5;
             this.UserModify_Button.Text = "수정";
             this.UserModify_Button.UseVisualStyleBackColor = false;
+            this.UserModify_Button.Click += new System.EventHandler(this.UserModify_Button_Click);
             // 
             // UserDelete_Button
             // 
@@ -112,6 +113,7 @@
             this.UserDelete_Button.TabIndex = 6;
             this.UserDelete_Button.Text = "삭제";
             this.UserDelete_Button.UseVisualStyleBackColor = false;
+            this.UserDelete_Button.Click += new System.EventHandler(this.UserDelete_Button_Click);
             // 
             // Cancel_Button
             // 

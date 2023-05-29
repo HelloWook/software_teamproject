@@ -36,11 +36,8 @@
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.AlarmAdd_Button = new System.Windows.Forms.Button();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.Alarm_Delete_Button = new System.Windows.Forms.Button();
             this.AlarmDateTime_Hour = new System.Windows.Forms.NumericUpDown();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.Alarm_offButton = new System.Windows.Forms.Button();
             this.Alarm_onButton = new System.Windows.Forms.Button();
@@ -68,7 +65,6 @@
             this.LogOutbutton = new System.Windows.Forms.Button();
             this.DayReturnButton = new System.Windows.Forms.Button();
             this.Check_Button = new System.Windows.Forms.Button();
-            this.Cancel_Button = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
@@ -114,11 +110,8 @@
             this.panel3.Controls.Add(this.linkLabel2);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.label6);
-            this.panel3.Controls.Add(this.AlarmAdd_Button);
             this.panel3.Controls.Add(this.numericUpDown2);
-            this.panel3.Controls.Add(this.Alarm_Delete_Button);
             this.panel3.Controls.Add(this.AlarmDateTime_Hour);
-            this.panel3.Controls.Add(this.button1);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Location = new System.Drawing.Point(364, 41);
             this.panel3.Name = "panel3";
@@ -152,7 +145,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label3.Location = new System.Drawing.Point(12, 86);
+            this.label3.Location = new System.Drawing.Point(12, 52);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(43, 20);
             this.label3.TabIndex = 20;
@@ -162,30 +155,18 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label6.Location = new System.Drawing.Point(189, 80);
+            this.label6.Location = new System.Drawing.Point(189, 46);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(17, 25);
             this.label6.TabIndex = 19;
             this.label6.Text = ":";
-            // 
-            // AlarmAdd_Button
-            // 
-            this.AlarmAdd_Button.BackColor = System.Drawing.Color.White;
-            this.AlarmAdd_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AlarmAdd_Button.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.AlarmAdd_Button.Location = new System.Drawing.Point(45, 353);
-            this.AlarmAdd_Button.Name = "AlarmAdd_Button";
-            this.AlarmAdd_Button.Size = new System.Drawing.Size(67, 29);
-            this.AlarmAdd_Button.TabIndex = 22;
-            this.AlarmAdd_Button.Text = "저장";
-            this.AlarmAdd_Button.UseVisualStyleBackColor = false;
             // 
             // numericUpDown2
             // 
             this.numericUpDown2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.numericUpDown2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.numericUpDown2.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.numericUpDown2.Location = new System.Drawing.Point(227, 82);
+            this.numericUpDown2.Location = new System.Drawing.Point(227, 48);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             59,
             0,
@@ -196,24 +177,12 @@
             this.numericUpDown2.TabIndex = 18;
             this.numericUpDown2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // Alarm_Delete_Button
-            // 
-            this.Alarm_Delete_Button.BackColor = System.Drawing.Color.White;
-            this.Alarm_Delete_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Alarm_Delete_Button.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.Alarm_Delete_Button.Location = new System.Drawing.Point(148, 353);
-            this.Alarm_Delete_Button.Name = "Alarm_Delete_Button";
-            this.Alarm_Delete_Button.Size = new System.Drawing.Size(67, 29);
-            this.Alarm_Delete_Button.TabIndex = 23;
-            this.Alarm_Delete_Button.Text = "삭제";
-            this.Alarm_Delete_Button.UseVisualStyleBackColor = false;
-            // 
             // AlarmDateTime_Hour
             // 
             this.AlarmDateTime_Hour.BackColor = System.Drawing.Color.WhiteSmoke;
             this.AlarmDateTime_Hour.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.AlarmDateTime_Hour.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.AlarmDateTime_Hour.Location = new System.Drawing.Point(74, 82);
+            this.AlarmDateTime_Hour.Location = new System.Drawing.Point(74, 48);
             this.AlarmDateTime_Hour.Maximum = new decimal(new int[] {
             12,
             0,
@@ -223,18 +192,6 @@
             this.AlarmDateTime_Hour.Size = new System.Drawing.Size(95, 29);
             this.AlarmDateTime_Hour.TabIndex = 17;
             this.AlarmDateTime_Hour.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button1.Location = new System.Drawing.Point(255, 353);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(67, 29);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "취소";
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // panel4
             // 
@@ -249,7 +206,7 @@
             this.panel4.Controls.Add(this.AlarmName);
             this.panel4.Controls.Add(this.label9);
             this.panel4.Controls.Add(this.label8);
-            this.panel4.Location = new System.Drawing.Point(6, 134);
+            this.panel4.Location = new System.Drawing.Point(6, 94);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(345, 136);
             this.panel4.TabIndex = 21;
@@ -260,7 +217,7 @@
             this.Alarm_offButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Alarm_offButton.BackgroundImage")));
             this.Alarm_offButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Alarm_offButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Alarm_offButton.Location = new System.Drawing.Point(300, 9);
+            this.Alarm_offButton.Location = new System.Drawing.Point(300, 4);
             this.Alarm_offButton.Name = "Alarm_offButton";
             this.Alarm_offButton.Size = new System.Drawing.Size(34, 33);
             this.Alarm_offButton.TabIndex = 6;
@@ -272,7 +229,7 @@
             this.Alarm_onButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Alarm_onButton.BackgroundImage")));
             this.Alarm_onButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Alarm_onButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Alarm_onButton.Location = new System.Drawing.Point(262, 9);
+            this.Alarm_onButton.Location = new System.Drawing.Point(262, 4);
             this.Alarm_onButton.Name = "Alarm_onButton";
             this.Alarm_onButton.Size = new System.Drawing.Size(32, 33);
             this.Alarm_onButton.TabIndex = 5;
@@ -295,7 +252,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label10.Location = new System.Drawing.Point(3, 17);
+            this.label10.Location = new System.Drawing.Point(3, 12);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(99, 20);
             this.label10.TabIndex = 8;
@@ -306,7 +263,7 @@
             this.Repetition_Off_Button.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Repetition_Off_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Repetition_Off_Button.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.Repetition_Off_Button.Location = new System.Drawing.Point(280, 101);
+            this.Repetition_Off_Button.Location = new System.Drawing.Point(280, 96);
             this.Repetition_Off_Button.Name = "Repetition_Off_Button";
             this.Repetition_Off_Button.Size = new System.Drawing.Size(54, 28);
             this.Repetition_Off_Button.TabIndex = 7;
@@ -318,7 +275,7 @@
             this.Repetition_On_Button.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Repetition_On_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Repetition_On_Button.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.Repetition_On_Button.Location = new System.Drawing.Point(214, 101);
+            this.Repetition_On_Button.Location = new System.Drawing.Point(214, 96);
             this.Repetition_On_Button.Name = "Repetition_On_Button";
             this.Repetition_On_Button.Size = new System.Drawing.Size(54, 28);
             this.Repetition_On_Button.TabIndex = 6;
@@ -331,7 +288,7 @@
             this.AlarmName.BackColor = System.Drawing.Color.WhiteSmoke;
             this.AlarmName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.AlarmName.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.AlarmName.Location = new System.Drawing.Point(57, 63);
+            this.AlarmName.Location = new System.Drawing.Point(57, 58);
             this.AlarmName.Name = "AlarmName";
             this.AlarmName.Size = new System.Drawing.Size(278, 20);
             this.AlarmName.TabIndex = 2;
@@ -340,7 +297,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label9.Location = new System.Drawing.Point(5, 101);
+            this.label9.Location = new System.Drawing.Point(5, 96);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(78, 20);
             this.label9.TabIndex = 1;
@@ -350,7 +307,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label8.Location = new System.Drawing.Point(5, 63);
+            this.label8.Location = new System.Drawing.Point(5, 58);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(58, 20);
             this.label8.TabIndex = 0;
@@ -539,26 +496,13 @@
             this.Check_Button.BackColor = System.Drawing.Color.MistyRose;
             this.Check_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Check_Button.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.Check_Button.Location = new System.Drawing.Point(757, 419);
+            this.Check_Button.Location = new System.Drawing.Point(757, 462);
             this.Check_Button.Name = "Check_Button";
             this.Check_Button.Size = new System.Drawing.Size(131, 37);
             this.Check_Button.TabIndex = 14;
             this.Check_Button.Text = "완료";
             this.Check_Button.UseVisualStyleBackColor = false;
             this.Check_Button.Click += new System.EventHandler(this.Check_Button_Click);
-            // 
-            // Cancel_Button
-            // 
-            this.Cancel_Button.BackColor = System.Drawing.Color.MistyRose;
-            this.Cancel_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cancel_Button.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.Cancel_Button.Location = new System.Drawing.Point(757, 462);
-            this.Cancel_Button.Name = "Cancel_Button";
-            this.Cancel_Button.Size = new System.Drawing.Size(131, 37);
-            this.Cancel_Button.TabIndex = 15;
-            this.Cancel_Button.Text = "취소";
-            this.Cancel_Button.UseVisualStyleBackColor = false;
-            this.Cancel_Button.Click += new System.EventHandler(this.Cancel_Button_Click);
             // 
             // DetailedScheduleUI
             // 
@@ -567,7 +511,6 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(910, 562);
-            this.Controls.Add(this.Cancel_Button);
             this.Controls.Add(this.Check_Button);
             this.Controls.Add(this.DayReturnButton);
             this.Controls.Add(this.LogOutbutton);
@@ -622,15 +565,11 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label Title;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button Cancel_Button;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button AlarmAdd_Button;
         private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.Button Alarm_Delete_Button;
         private System.Windows.Forms.NumericUpDown AlarmDateTime_Hour;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button Repetition_Off_Button;
         private System.Windows.Forms.Button Repetition_On_Button;

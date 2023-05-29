@@ -16,8 +16,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 namespace soft_team9
 {
     public partial class S_DayCalenderUI : Form
-    {
-       
+    {      
         string _server = "wook.cgnexsu6jcqf.ap-northeast-2.rds.amazonaws.com"; //DB 서버 주소, 로컬일 경우 localhost
         int _port = 3306; //DB 서버 포트
         string _database = "new_schema"; //DB 이름
@@ -25,8 +24,6 @@ namespace soft_team9
         string _pw = "12345678"; //계정 비밀번호
         string _connectionAddress = "";
         
-        LoginUI loginUI;
-
         public S_DayCalenderUI()
         {
             InitializeComponent();
@@ -40,7 +37,7 @@ namespace soft_team9
                 using(MySqlConnection mysql = new MySqlConnection(_connectionAddress))
                 {
                     mysql.Open();
-
+                   
                     string selectQuery = "SELECT name, class FROM users WHERE id = @loginUI.UserID_textBox.Text";
                     
                     MySqlCommand command1 = new MySqlCommand(selectQuery, mysql);
@@ -125,16 +122,16 @@ namespace soft_team9
 
             if (MessageBox.Show("로그아웃하시겠습니까?", "Logout", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
-                this.Close();
+                this.Visible=false;
                 LoginUI loginUI = new LoginUI();
-                loginUI.Show();
+                loginUI.ShowDialog();
             }
         }
 
         private void ScheduleAddButton_Click(object sender, EventArgs e)
         {
             // 현재 창은 닫고, 스케줄 등록하는 창 띄어줌
-            this.Close();
+            this.Visible = false;
             DetailedScheduleUI detailedScheduleUI = new DetailedScheduleUI();
             detailedScheduleUI.Show();
         }
@@ -142,7 +139,7 @@ namespace soft_team9
         private void ScheduleModifyButton_Click(object sender, EventArgs e)
         {
             // 현재 창은 닫고, 수정하는 창 띄어줌
-            this.Close();
+            this.Hide();
             DetailedScheduleUI detailedScheduleUI = new DetailedScheduleUI();
             detailedScheduleUI.Show();
         }

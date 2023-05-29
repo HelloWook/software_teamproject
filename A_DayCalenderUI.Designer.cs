@@ -1,6 +1,6 @@
 ﻿namespace soft_team9
 {
-    partial class DayCalenderUI
+    partial class A_DayCalenderUI
     {
         /// <summary>
         /// 필수 디자이너 변수입니다.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DayCalenderUI));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(A_DayCalenderUI));
             this.day = new System.Windows.Forms.DateTimePicker();
             this.Announcement_ListBox = new System.Windows.Forms.ListBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -201,7 +201,7 @@
             this.User_inform_Button.UseVisualStyleBackColor = false;
             this.User_inform_Button.Click += new System.EventHandler(this.User_inform_Button_Click);
             // 
-            // DayCalenderUI
+            // A_DayCalenderUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -223,7 +223,7 @@
             this.Controls.Add(this.day);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "DayCalenderUI";
+            this.Name = "A_DayCalenderUI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DayCalenderUI";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
